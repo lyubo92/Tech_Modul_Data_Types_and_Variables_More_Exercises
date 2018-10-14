@@ -1,0 +1,15 @@
+import java.util.Scanner;
+
+public class floatingEqualty {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        double a = Double.parseDouble(input.nextLine());
+        double b = Double.parseDouble(input.nextLine());
+        double eps = 0.000001;
+        if (Math.abs(a - b) > eps){
+            System.out.println("False");
+        }else{
+            System.out.println("True");
+        }
+    }
+}
